@@ -1,0 +1,1126 @@
+[gd_resource type="VisualShader" load_steps=114 format=2]
+
+[sub_resource type="VisualShaderNodeInput" id=1]
+input_name = "camera"
+
+[sub_resource type="VisualShaderNodeVectorOp" id=2]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=3]
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=4]
+operator = 1
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=5]
+
+[sub_resource type="VisualShaderNodeInput" id=6]
+input_name = "inv_camera"
+
+[sub_resource type="VisualShaderNodeInput" id=7]
+input_name = "normal"
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=8]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=9]
+operator = 1
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=10]
+
+[sub_resource type="VisualShaderNodeInput" id=11]
+input_name = "normal"
+
+[sub_resource type="VisualShaderNodeVectorOp" id=12]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 2, 2, 2 ) ]
+operator = 4
+
+[sub_resource type="VisualShaderNodeInput" id=13]
+input_name = "vertex"
+
+[sub_resource type="VisualShaderNodeInput" id=14]
+input_name = "camera"
+
+[sub_resource type="VisualShaderNodeScalarOp" id=15]
+default_input_values = [ 0, 0.0, 1, 2.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeScalarOp" id=16]
+default_input_values = [ 0, 0.0, 1, 2.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeVectorOp" id=17]
+
+[sub_resource type="VisualShaderNodeScalarOp" id=18]
+default_input_values = [ 0, 0.0, 1, 2.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeVectorOp" id=19]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=20]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 0.5, 0.5, 0.5 ) ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorOp" id=21]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 0.5, 0.5, 0.5 ) ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeInput" id=22]
+input_name = "inv_camera"
+
+[sub_resource type="VisualShaderNodeVectorOp" id=23]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 0.5, 0.5, 0.5 ) ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=24]
+
+[sub_resource type="VisualShaderNodeScalarOp" id=25]
+default_input_values = [ 0, 1.0, 1, 4096.0 ]
+operator = 3
+
+[sub_resource type="VisualShaderNodeScalarOp" id=26]
+default_input_values = [ 0, 1.0, 1, 2.0 ]
+operator = 3
+
+[sub_resource type="VisualShaderNodeScalarOp" id=27]
+default_input_values = [ 0, 2.0, 1, 10.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeScalarOp" id=28]
+operator = 2
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=29]
+operator = 1
+
+[sub_resource type="VisualShaderNodeScalarOp" id=30]
+operator = 2
+
+[sub_resource type="VisualShaderNodeTextureUniform" id=31]
+uniform_name = "Texure"
+
+[sub_resource type="VisualShaderNodeScalarUniform" id=32]
+uniform_name = "noise_size"
+
+[sub_resource type="VisualShaderNodeScalarUniform" id=33]
+uniform_name = "texture_size"
+
+[sub_resource type="VisualShaderNodeScalarOp" id=34]
+default_input_values = [ 0, 2.0, 1, 2.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=35]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=36]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 2, 2, 2 ) ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeTextureUniform" id=37]
+uniform_name = "Noise_Texture"
+
+[sub_resource type="VisualShaderNodeVectorOp" id=38]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorOp" id=39]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=40]
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=41]
+operator = 1
+
+[sub_resource type="VisualShaderNodeInput" id=42]
+input_name = "vertex"
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=43]
+
+[sub_resource type="VisualShaderNodeInput" id=44]
+input_name = "inv_camera"
+
+[sub_resource type="VisualShaderNodeInput" id=45]
+input_name = "normal"
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=46]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=47]
+operator = 1
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=48]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=49]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 2, 2, 2 ) ]
+operator = 4
+
+[sub_resource type="VisualShaderNodeInput" id=50]
+input_name = "vertex"
+
+[sub_resource type="VisualShaderNodeInput" id=51]
+input_name = "camera"
+
+[sub_resource type="VisualShaderNodeVectorOp" id=52]
+operator = 2
+
+[sub_resource type="VisualShaderNodeInput" id=53]
+input_name = "camera"
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=54]
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=55]
+operator = 1
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=56]
+
+[sub_resource type="VisualShaderNodeInput" id=57]
+input_name = "inv_camera"
+
+[sub_resource type="VisualShaderNodeInput" id=58]
+input_name = "normal"
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=59]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=60]
+operator = 1
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=61]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=62]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 2, 2, 2 ) ]
+operator = 4
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=63]
+
+[sub_resource type="VisualShaderNodeInput" id=64]
+input_name = "vertex"
+
+[sub_resource type="VisualShaderNodeInput" id=65]
+input_name = "camera"
+
+[sub_resource type="VisualShaderNodeScalarOp" id=66]
+default_input_values = [ 0, 0.0, 1, 2.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeScalarOp" id=67]
+default_input_values = [ 0, 0.0, 1, 2.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeVectorOp" id=68]
+
+[sub_resource type="VisualShaderNodeScalarOp" id=69]
+default_input_values = [ 0, 0.0, 1, 2.0 ]
+operator = 5
+
+[sub_resource type="VisualShaderNodeVectorOp" id=70]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=71]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 0.5, 0.5, 0.5 ) ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorOp" id=72]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 0.5, 0.5, 0.5 ) ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorOp" id=73]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 0.5, 0.5, 0.5 ) ]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorOp" id=74]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 1, 1, 1 ) ]
+operator = 4
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=75]
+
+[sub_resource type="VisualShaderNodeScalarFunc" id=76]
+function = 0
+
+[sub_resource type="VisualShaderNodeScalarFunc" id=77]
+function = 1
+
+[sub_resource type="VisualShaderNodeScalarConstant" id=78]
+constant = 3.14
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=79]
+
+[sub_resource type="VisualShaderNodeScalarOp" id=80]
+operator = 2
+
+[sub_resource type="VisualShaderNodeScalarOp" id=81]
+operator = 2
+
+[sub_resource type="VisualShaderNodeScalarOp" id=82]
+operator = 2
+
+[sub_resource type="VisualShaderNodeScalarOp" id=83]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorOp" id=84]
+operator = 1
+
+[sub_resource type="VisualShaderNodeScalarOp" id=85]
+
+[sub_resource type="VisualShaderNodeScalarOp" id=86]
+operator = 1
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=87]
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=88]
+
+[sub_resource type="VisualShaderNodeInput" id=89]
+input_name = "vertex"
+
+[sub_resource type="VisualShaderNodeInput" id=90]
+input_name = "camera"
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=91]
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=92]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=93]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 1, 1, 1 ) ]
+operator = 4
+
+[sub_resource type="VisualShaderNodeVectorOp" id=94]
+operator = 1
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=95]
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=96]
+
+[sub_resource type="VisualShaderNodeInput" id=97]
+input_name = "normal"
+
+[sub_resource type="VisualShaderNodeInput" id=98]
+input_name = "inv_camera"
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=99]
+operator = 1
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=100]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=101]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorOp" id=102]
+operator = 2
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=103]
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=104]
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=105]
+operator = 1
+
+[sub_resource type="VisualShaderNodeVectorCompose" id=106]
+
+[sub_resource type="VisualShaderNodeInput" id=107]
+input_name = "inv_camera"
+
+[sub_resource type="VisualShaderNodeInput" id=108]
+input_name = "normal"
+
+[sub_resource type="VisualShaderNodeVectorDecompose" id=109]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=110]
+operator = 1
+
+[sub_resource type="VisualShaderNodeTransformVecMult" id=111]
+
+[sub_resource type="VisualShaderNodeVectorOp" id=112]
+default_input_values = [ 0, Vector3( 0, 0, 0 ), 1, Vector3( 2, 2, 2 ) ]
+operator = 4
+
+[sub_resource type="VisualShaderNodeInput" id=113]
+input_name = "vertex"
+
+[resource]
+code = "shader_type spatial;
+uniform float noise_size;
+uniform sampler2D Noise_Texture;
+uniform float texture_size;
+uniform sampler2D Texure;
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Scalar:60
+	float n_out60p0;
+	n_out60p0 = 3.140000;
+
+// Input:3
+	mat4 n_out3p0;
+	n_out3p0 = CAMERA_MATRIX;
+
+// Input:2
+	vec3 n_out2p0;
+	n_out2p0 = VERTEX;
+
+// TransformVectorMult:4
+	vec3 n_out4p0;
+	n_out4p0 = ( n_out3p0 * vec4(n_out2p0, 1.0) ).xyz;
+
+// ScalarUniform:136
+	float n_out136p0;
+	n_out136p0 = noise_size;
+
+// ScalarOp:125
+	float n_in125p0 = 2.00000;
+	float n_out125p0;
+	n_out125p0 = pow( n_in125p0 , n_out136p0 );
+
+// ScalarOp:123
+	float n_in123p0 = 1.00000;
+	float n_out123p0;
+	n_out123p0 = n_in123p0 / n_out125p0;
+
+// VectorCompose:75
+	vec3 n_out75p0;
+	n_out75p0 = vec3( n_out123p0 , n_out123p0 , n_out123p0 );
+
+// VectorOp:47
+	vec3 n_out47p0;
+	n_out47p0 = n_out4p0 * n_out75p0;
+
+// VectorOp:5
+	vec3 n_in5p1 = vec3(1.00000,1.00000,1.00000);
+	vec3 n_out5p0;
+	n_out5p0 = mod( n_out47p0 , n_in5p1 );
+
+// VectorOp:7
+	vec3 n_in7p1 = vec3(0.00000,0.00000,0.00000);
+	vec3 n_out7p0;
+	n_out7p0 = n_out5p0 - n_in7p1;
+
+// VectorDecompose:9
+	float n_out9p0;
+	float n_out9p1;
+	float n_out9p2;
+	n_out9p0 = n_out7p0.x;
+	n_out9p1 = n_out7p0.y;
+	n_out9p2 = n_out7p0.z;
+
+// VectorCompose:8
+	vec3 n_out8p0;
+	n_out8p0 = vec3( n_out9p0 , n_out9p2 , n_out9p1 );
+
+// Input:12
+	mat4 n_out12p0;
+	n_out12p0 = INV_CAMERA_MATRIX;
+
+// Input:11
+	vec3 n_out11p0;
+	n_out11p0 = NORMAL;
+
+// TransformVectorMult:13
+	vec3 n_out13p0;
+	n_out13p0 = ( vec4(n_out11p0, 1.0) * n_out12p0 ).xyz;
+
+// VectorDecompose:14
+	float n_out14p0;
+	float n_out14p1;
+	float n_out14p2;
+	n_out14p0 = n_out13p0.x;
+	n_out14p1 = n_out13p0.y;
+	n_out14p2 = n_out13p0.z;
+
+// ScalarOp:42
+	float n_in42p1 = 2.00000;
+	float n_out42p0;
+	n_out42p0 = pow( n_out14p1 , n_in42p1 );
+
+// VectorOp:15
+	vec3 n_out15p0;
+	n_out15p0 = n_out8p0 * vec3(n_out42p0);
+
+// Input:28
+	mat4 n_out28p0;
+	n_out28p0 = CAMERA_MATRIX;
+
+// Input:27
+	vec3 n_out27p0;
+	n_out27p0 = VERTEX;
+
+// TransformVectorMult:25
+	vec3 n_out25p0;
+	n_out25p0 = ( n_out28p0 * vec4(n_out27p0, 1.0) ).xyz;
+
+// VectorOp:48
+	vec3 n_out48p0;
+	n_out48p0 = n_out25p0 * n_out75p0;
+
+// VectorOp:26
+	vec3 n_in26p1 = vec3(2.00000,2.00000,2.00000);
+	vec3 n_out26p0;
+	n_out26p0 = mod( n_out48p0 , n_in26p1 );
+
+// VectorOp:24
+	vec3 n_in24p1 = vec3(0.00000,0.00000,0.00000);
+	vec3 n_out24p0;
+	n_out24p0 = n_out26p0 - n_in24p1;
+
+// VectorDecompose:23
+	float n_out23p0;
+	float n_out23p1;
+	float n_out23p2;
+	n_out23p0 = n_out24p0.x;
+	n_out23p1 = n_out24p0.y;
+	n_out23p2 = n_out24p0.z;
+
+// VectorCompose:20
+	vec3 n_out20p0;
+	n_out20p0 = vec3( n_out23p0 , n_out23p1 , n_out23p2 );
+
+// Input:21
+	mat4 n_out21p0;
+	n_out21p0 = INV_CAMERA_MATRIX;
+
+// Input:22
+	vec3 n_out22p0;
+	n_out22p0 = NORMAL;
+
+// TransformVectorMult:19
+	vec3 n_out19p0;
+	n_out19p0 = ( vec4(n_out22p0, 1.0) * n_out21p0 ).xyz;
+
+// VectorDecompose:18
+	float n_out18p0;
+	float n_out18p1;
+	float n_out18p2;
+	n_out18p0 = n_out19p0.x;
+	n_out18p1 = n_out19p0.y;
+	n_out18p2 = n_out19p0.z;
+
+// ScalarOp:43
+	float n_in43p1 = 2.00000;
+	float n_out43p0;
+	n_out43p0 = pow( n_out18p2 , n_in43p1 );
+
+// VectorOp:16
+	vec3 n_out16p0;
+	n_out16p0 = n_out20p0 * vec3(n_out43p0);
+
+// VectorOp:44
+	vec3 n_out44p0;
+	n_out44p0 = n_out15p0 + n_out16p0;
+
+// Input:41
+	mat4 n_out41p0;
+	n_out41p0 = CAMERA_MATRIX;
+
+// Input:40
+	vec3 n_out40p0;
+	n_out40p0 = VERTEX;
+
+// TransformVectorMult:38
+	vec3 n_out38p0;
+	n_out38p0 = ( n_out41p0 * vec4(n_out40p0, 1.0) ).xyz;
+
+// VectorOp:49
+	vec3 n_out49p0;
+	n_out49p0 = n_out38p0 * n_out75p0;
+
+// VectorOp:39
+	vec3 n_in39p1 = vec3(2.00000,2.00000,2.00000);
+	vec3 n_out39p0;
+	n_out39p0 = mod( n_out49p0 , n_in39p1 );
+
+// VectorOp:37
+	vec3 n_in37p1 = vec3(0.00000,0.00000,0.00000);
+	vec3 n_out37p0;
+	n_out37p0 = n_out39p0 - n_in37p1;
+
+// VectorDecompose:36
+	float n_out36p0;
+	float n_out36p1;
+	float n_out36p2;
+	n_out36p0 = n_out37p0.x;
+	n_out36p1 = n_out37p0.y;
+	n_out36p2 = n_out37p0.z;
+
+// VectorCompose:33
+	vec3 n_out33p0;
+	n_out33p0 = vec3( n_out36p2 , n_out36p1 , n_out36p0 );
+
+// Input:34
+	mat4 n_out34p0;
+	n_out34p0 = INV_CAMERA_MATRIX;
+
+// Input:35
+	vec3 n_out35p0;
+	n_out35p0 = NORMAL;
+
+// TransformVectorMult:32
+	vec3 n_out32p0;
+	n_out32p0 = ( vec4(n_out35p0, 1.0) * n_out34p0 ).xyz;
+
+// VectorDecompose:30
+	float n_out30p0;
+	float n_out30p1;
+	float n_out30p2;
+	n_out30p0 = n_out32p0.x;
+	n_out30p1 = n_out32p0.y;
+	n_out30p2 = n_out32p0.z;
+
+// ScalarOp:45
+	float n_in45p1 = 2.00000;
+	float n_out45p0;
+	n_out45p0 = pow( n_out30p0 , n_in45p1 );
+
+// VectorOp:29
+	vec3 n_out29p0;
+	n_out29p0 = n_out33p0 * vec3(n_out45p0);
+
+// VectorOp:46
+	vec3 n_out46p0;
+	n_out46p0 = n_out44p0 + n_out29p0;
+
+// TextureUniform:142
+	vec3 n_out142p0;
+	float n_out142p1;
+	{
+		vec4 n_tex_read = texture( Noise_Texture , n_out46p0.xy );
+		n_out142p0 = n_tex_read.rgb;
+		n_out142p1 = n_tex_read.a;
+	}
+
+// VectorDecompose:53
+	float n_out53p0;
+	float n_out53p1;
+	float n_out53p2;
+	n_out53p0 = n_out142p0.x;
+	n_out53p1 = n_out142p0.y;
+	n_out53p2 = n_out142p0.z;
+
+// ScalarOp:129
+	float n_out129p0;
+	n_out129p0 = n_out60p0 * n_out53p0;
+
+// ScalarFunc:58
+	float n_out58p0;
+	n_out58p0 = sin(n_out129p0);
+
+// Input:78
+	mat4 n_out78p0;
+	n_out78p0 = CAMERA_MATRIX;
+
+// Input:77
+	vec3 n_out77p0;
+	n_out77p0 = VERTEX;
+
+// TransformVectorMult:79
+	vec3 n_out79p0;
+	n_out79p0 = ( n_out78p0 * vec4(n_out77p0, 1.0) ).xyz;
+
+// ScalarUniform:137
+	float n_out137p0;
+	n_out137p0 = texture_size;
+
+// ScalarOp:138
+	float n_in138p0 = 2.00000;
+	float n_out138p0;
+	n_out138p0 = pow( n_in138p0 , n_out137p0 );
+
+// ScalarOp:124
+	float n_in124p0 = 1.00000;
+	float n_out124p0;
+	n_out124p0 = n_in124p0 / n_out138p0;
+
+// VectorCompose:122
+	vec3 n_out122p0;
+	n_out122p0 = vec3( n_out124p0 , n_out124p0 , n_out124p0 );
+
+// VectorOp:118
+	vec3 n_out118p0;
+	n_out118p0 = n_out79p0 * n_out122p0;
+
+// VectorOp:80
+	vec3 n_in80p1 = vec3(1.00000,1.00000,1.00000);
+	vec3 n_out80p0;
+	n_out80p0 = mod( n_out118p0 , n_in80p1 );
+
+// VectorOp:81
+	vec3 n_in81p1 = vec3(0.00000,0.00000,0.00000);
+	vec3 n_out81p0;
+	n_out81p0 = n_out80p0 - n_in81p1;
+
+// VectorDecompose:83
+	float n_out83p0;
+	float n_out83p1;
+	float n_out83p2;
+	n_out83p0 = n_out81p0.x;
+	n_out83p1 = n_out81p0.y;
+	n_out83p2 = n_out81p0.z;
+
+// VectorCompose:82
+	vec3 n_out82p0;
+	n_out82p0 = vec3( n_out83p0 , n_out83p2 , n_out83p1 );
+
+// Input:85
+	mat4 n_out85p0;
+	n_out85p0 = INV_CAMERA_MATRIX;
+
+// Input:84
+	vec3 n_out84p0;
+	n_out84p0 = NORMAL;
+
+// TransformVectorMult:86
+	vec3 n_out86p0;
+	n_out86p0 = ( vec4(n_out84p0, 1.0) * n_out85p0 ).xyz;
+
+// VectorDecompose:87
+	float n_out87p0;
+	float n_out87p1;
+	float n_out87p2;
+	n_out87p0 = n_out86p0.x;
+	n_out87p1 = n_out86p0.y;
+	n_out87p2 = n_out86p0.z;
+
+// ScalarOp:113
+	float n_in113p1 = 2.00000;
+	float n_out113p0;
+	n_out113p0 = pow( n_out87p1 , n_in113p1 );
+
+// VectorOp:88
+	vec3 n_out88p0;
+	n_out88p0 = n_out82p0 * vec3(n_out113p0);
+
+// Input:100
+	mat4 n_out100p0;
+	n_out100p0 = CAMERA_MATRIX;
+
+// Input:99
+	vec3 n_out99p0;
+	n_out99p0 = VERTEX;
+
+// TransformVectorMult:97
+	vec3 n_out97p0;
+	n_out97p0 = ( n_out100p0 * vec4(n_out99p0, 1.0) ).xyz;
+
+// VectorOp:119
+	vec3 n_out119p0;
+	n_out119p0 = n_out97p0 * n_out122p0;
+
+// VectorOp:98
+	vec3 n_in98p1 = vec3(2.00000,2.00000,2.00000);
+	vec3 n_out98p0;
+	n_out98p0 = mod( n_out119p0 , n_in98p1 );
+
+// VectorOp:96
+	vec3 n_in96p1 = vec3(0.00000,0.00000,0.00000);
+	vec3 n_out96p0;
+	n_out96p0 = n_out98p0 - n_in96p1;
+
+// VectorDecompose:95
+	float n_out95p0;
+	float n_out95p1;
+	float n_out95p2;
+	n_out95p0 = n_out96p0.x;
+	n_out95p1 = n_out96p0.y;
+	n_out95p2 = n_out96p0.z;
+
+// VectorCompose:92
+	vec3 n_out92p0;
+	n_out92p0 = vec3( n_out95p0 , n_out95p1 , n_out95p2 );
+
+// Input:93
+	mat4 n_out93p0;
+	n_out93p0 = INV_CAMERA_MATRIX;
+
+// Input:94
+	vec3 n_out94p0;
+	n_out94p0 = NORMAL;
+
+// TransformVectorMult:91
+	vec3 n_out91p0;
+	n_out91p0 = ( vec4(n_out94p0, 1.0) * n_out93p0 ).xyz;
+
+// VectorDecompose:90
+	float n_out90p0;
+	float n_out90p1;
+	float n_out90p2;
+	n_out90p0 = n_out91p0.x;
+	n_out90p1 = n_out91p0.y;
+	n_out90p2 = n_out91p0.z;
+
+// ScalarOp:114
+	float n_in114p1 = 2.00000;
+	float n_out114p0;
+	n_out114p0 = pow( n_out90p2 , n_in114p1 );
+
+// VectorOp:89
+	vec3 n_out89p0;
+	n_out89p0 = n_out92p0 * vec3(n_out114p0);
+
+// VectorOp:115
+	vec3 n_out115p0;
+	n_out115p0 = n_out88p0 + n_out89p0;
+
+// Input:112
+	mat4 n_out112p0;
+	n_out112p0 = CAMERA_MATRIX;
+
+// Input:111
+	vec3 n_out111p0;
+	n_out111p0 = VERTEX;
+
+// TransformVectorMult:109
+	vec3 n_out109p0;
+	n_out109p0 = ( n_out112p0 * vec4(n_out111p0, 1.0) ).xyz;
+
+// VectorOp:120
+	vec3 n_out120p0;
+	n_out120p0 = n_out109p0 * n_out122p0;
+
+// VectorOp:110
+	vec3 n_in110p1 = vec3(2.00000,2.00000,2.00000);
+	vec3 n_out110p0;
+	n_out110p0 = mod( n_out120p0 , n_in110p1 );
+
+// VectorOp:108
+	vec3 n_in108p1 = vec3(0.00000,0.00000,0.00000);
+	vec3 n_out108p0;
+	n_out108p0 = n_out110p0 - n_in108p1;
+
+// VectorDecompose:107
+	float n_out107p0;
+	float n_out107p1;
+	float n_out107p2;
+	n_out107p0 = n_out108p0.x;
+	n_out107p1 = n_out108p0.y;
+	n_out107p2 = n_out108p0.z;
+
+// VectorCompose:104
+	vec3 n_out104p0;
+	n_out104p0 = vec3( n_out107p2 , n_out107p1 , n_out107p0 );
+
+// Input:105
+	mat4 n_out105p0;
+	n_out105p0 = INV_CAMERA_MATRIX;
+
+// Input:106
+	vec3 n_out106p0;
+	n_out106p0 = NORMAL;
+
+// TransformVectorMult:103
+	vec3 n_out103p0;
+	n_out103p0 = ( vec4(n_out106p0, 1.0) * n_out105p0 ).xyz;
+
+// VectorDecompose:102
+	float n_out102p0;
+	float n_out102p1;
+	float n_out102p2;
+	n_out102p0 = n_out103p0.x;
+	n_out102p1 = n_out103p0.y;
+	n_out102p2 = n_out103p0.z;
+
+// ScalarOp:116
+	float n_in116p1 = 2.00000;
+	float n_out116p0;
+	n_out116p0 = pow( n_out102p0 , n_in116p1 );
+
+// VectorOp:101
+	vec3 n_out101p0;
+	n_out101p0 = n_out104p0 * vec3(n_out116p0);
+
+// VectorOp:117
+	vec3 n_out117p0;
+	n_out117p0 = n_out115p0 + n_out101p0;
+
+// VectorDecompose:72
+	float n_out72p0;
+	float n_out72p1;
+	float n_out72p2;
+	n_out72p0 = n_out117p0.x;
+	n_out72p1 = n_out117p0.y;
+	n_out72p2 = n_out117p0.z;
+
+// ScalarOp:65
+	float n_out65p0;
+	n_out65p0 = n_out58p0 * n_out72p0;
+
+// ScalarOp:130
+	float n_out130p0;
+	n_out130p0 = n_out60p0 * n_out53p2;
+
+// ScalarFunc:59
+	float n_out59p0;
+	n_out59p0 = cos(n_out130p0);
+
+// ScalarOp:69
+	float n_out69p0;
+	n_out69p0 = n_out59p0 * n_out72p1;
+
+// ScalarOp:70
+	float n_out70p0;
+	n_out70p0 = n_out65p0 + n_out69p0;
+
+// ScalarOp:68
+	float n_out68p0;
+	n_out68p0 = n_out59p0 * n_out72p0;
+
+// ScalarOp:67
+	float n_out67p0;
+	n_out67p0 = n_out58p0 * n_out72p1;
+
+// ScalarOp:71
+	float n_out71p0;
+	n_out71p0 = n_out68p0 - n_out67p0;
+
+// VectorCompose:63
+	float n_in63p2 = 0.00000;
+	vec3 n_out63p0;
+	n_out63p0 = vec3( n_out70p0 , n_out71p0 , n_in63p2 );
+
+// TextureUniform:135
+	vec3 n_out135p0;
+	float n_out135p1;
+	{
+		vec4 n_tex_read = texture( Texure , n_out63p0.xy );
+		n_out135p0 = n_tex_read.rgb;
+		n_out135p1 = n_tex_read.a;
+	}
+
+// VectorOp:141
+	vec3 n_in141p1 = vec3(2.00000,2.00000,2.00000);
+	vec3 n_out141p0;
+	n_out141p0 = pow( n_out135p0 , n_in141p1 );
+
+// Output:0
+	ALBEDO = n_out141p0;
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( 917, 375.208 )
+nodes/fragment/0/position = Vector2( 2920, 440 )
+nodes/fragment/2/node = SubResource( 42 )
+nodes/fragment/2/position = Vector2( -60, 240 )
+nodes/fragment/3/node = SubResource( 53 )
+nodes/fragment/3/position = Vector2( -60, 180 )
+nodes/fragment/4/node = SubResource( 63 )
+nodes/fragment/4/position = Vector2( 120, 180 )
+nodes/fragment/5/node = SubResource( 74 )
+nodes/fragment/5/position = Vector2( -20, 280 )
+nodes/fragment/7/node = SubResource( 84 )
+nodes/fragment/7/position = Vector2( 140, 280 )
+nodes/fragment/8/node = SubResource( 92 )
+nodes/fragment/8/position = Vector2( 700, 180 )
+nodes/fragment/9/node = SubResource( 103 )
+nodes/fragment/9/position = Vector2( 500, 180 )
+nodes/fragment/11/node = SubResource( 11 )
+nodes/fragment/11/position = Vector2( 300, 340 )
+nodes/fragment/12/node = SubResource( 22 )
+nodes/fragment/12/position = Vector2( 300, 280 )
+nodes/fragment/13/node = SubResource( 29 )
+nodes/fragment/13/position = Vector2( 500, 280 )
+nodes/fragment/14/node = SubResource( 35 )
+nodes/fragment/14/position = Vector2( 720, 280 )
+nodes/fragment/15/node = SubResource( 38 )
+nodes/fragment/15/position = Vector2( 880, 180 )
+nodes/fragment/16/node = SubResource( 39 )
+nodes/fragment/16/position = Vector2( 880, 400 )
+nodes/fragment/18/node = SubResource( 40 )
+nodes/fragment/18/position = Vector2( 720, 500 )
+nodes/fragment/19/node = SubResource( 41 )
+nodes/fragment/19/position = Vector2( 500, 500 )
+nodes/fragment/20/node = SubResource( 43 )
+nodes/fragment/20/position = Vector2( 700, 400 )
+nodes/fragment/21/node = SubResource( 44 )
+nodes/fragment/21/position = Vector2( 300, 500 )
+nodes/fragment/22/node = SubResource( 45 )
+nodes/fragment/22/position = Vector2( 300, 560 )
+nodes/fragment/23/node = SubResource( 46 )
+nodes/fragment/23/position = Vector2( 500, 400 )
+nodes/fragment/24/node = SubResource( 47 )
+nodes/fragment/24/position = Vector2( 140, 500 )
+nodes/fragment/25/node = SubResource( 48 )
+nodes/fragment/25/position = Vector2( 120, 400 )
+nodes/fragment/26/node = SubResource( 49 )
+nodes/fragment/26/position = Vector2( -20, 500 )
+nodes/fragment/27/node = SubResource( 50 )
+nodes/fragment/27/position = Vector2( -60, 460 )
+nodes/fragment/28/node = SubResource( 51 )
+nodes/fragment/28/position = Vector2( -60, 400 )
+nodes/fragment/29/node = SubResource( 52 )
+nodes/fragment/29/position = Vector2( 880, 620 )
+nodes/fragment/30/node = SubResource( 54 )
+nodes/fragment/30/position = Vector2( 720, 720 )
+nodes/fragment/32/node = SubResource( 55 )
+nodes/fragment/32/position = Vector2( 500, 720 )
+nodes/fragment/33/node = SubResource( 56 )
+nodes/fragment/33/position = Vector2( 700, 620 )
+nodes/fragment/34/node = SubResource( 57 )
+nodes/fragment/34/position = Vector2( 300, 720 )
+nodes/fragment/35/node = SubResource( 58 )
+nodes/fragment/35/position = Vector2( 300, 780 )
+nodes/fragment/36/node = SubResource( 59 )
+nodes/fragment/36/position = Vector2( 500, 620 )
+nodes/fragment/37/node = SubResource( 60 )
+nodes/fragment/37/position = Vector2( 140, 720 )
+nodes/fragment/38/node = SubResource( 61 )
+nodes/fragment/38/position = Vector2( 120, 620 )
+nodes/fragment/39/node = SubResource( 62 )
+nodes/fragment/39/position = Vector2( -20, 720 )
+nodes/fragment/40/node = SubResource( 64 )
+nodes/fragment/40/position = Vector2( -60, 680 )
+nodes/fragment/41/node = SubResource( 65 )
+nodes/fragment/41/position = Vector2( -60, 620 )
+nodes/fragment/42/node = SubResource( 66 )
+nodes/fragment/42/position = Vector2( 920, 280 )
+nodes/fragment/43/node = SubResource( 67 )
+nodes/fragment/43/position = Vector2( 920, 500 )
+nodes/fragment/44/node = SubResource( 68 )
+nodes/fragment/44/position = Vector2( 1080, 280 )
+nodes/fragment/45/node = SubResource( 69 )
+nodes/fragment/45/position = Vector2( 920, 720 )
+nodes/fragment/46/node = SubResource( 70 )
+nodes/fragment/46/position = Vector2( 1080, 180 )
+nodes/fragment/47/node = SubResource( 71 )
+nodes/fragment/47/position = Vector2( 340, 180 )
+nodes/fragment/48/node = SubResource( 72 )
+nodes/fragment/48/position = Vector2( 340, 400 )
+nodes/fragment/49/node = SubResource( 73 )
+nodes/fragment/49/position = Vector2( 340, 620 )
+nodes/fragment/53/node = SubResource( 75 )
+nodes/fragment/53/position = Vector2( 1660, 640 )
+nodes/fragment/58/node = SubResource( 76 )
+nodes/fragment/58/position = Vector2( 1820, 440 )
+nodes/fragment/59/node = SubResource( 77 )
+nodes/fragment/59/position = Vector2( 1820, 500 )
+nodes/fragment/60/node = SubResource( 78 )
+nodes/fragment/60/position = Vector2( 1460, 440 )
+nodes/fragment/63/node = SubResource( 79 )
+nodes/fragment/63/position = Vector2( 2400, 440 )
+nodes/fragment/65/node = SubResource( 80 )
+nodes/fragment/65/position = Vector2( 2080, 440 )
+nodes/fragment/67/node = SubResource( 81 )
+nodes/fragment/67/position = Vector2( 2080, 540 )
+nodes/fragment/68/node = SubResource( 82 )
+nodes/fragment/68/position = Vector2( 2080, 640 )
+nodes/fragment/69/node = SubResource( 83 )
+nodes/fragment/69/position = Vector2( 2080, 740 )
+nodes/fragment/70/node = SubResource( 85 )
+nodes/fragment/70/position = Vector2( 2240, 440 )
+nodes/fragment/71/node = SubResource( 86 )
+nodes/fragment/71/position = Vector2( 2240, 540 )
+nodes/fragment/72/node = SubResource( 87 )
+nodes/fragment/72/position = Vector2( 1660, 740 )
+nodes/fragment/75/node = SubResource( 88 )
+nodes/fragment/75/position = Vector2( 1060, 100 )
+nodes/fragment/77/node = SubResource( 89 )
+nodes/fragment/77/position = Vector2( -60, 1060 )
+nodes/fragment/78/node = SubResource( 90 )
+nodes/fragment/78/position = Vector2( -60, 1000 )
+nodes/fragment/79/node = SubResource( 91 )
+nodes/fragment/79/position = Vector2( 120, 1000 )
+nodes/fragment/80/node = SubResource( 93 )
+nodes/fragment/80/position = Vector2( -20, 1100 )
+nodes/fragment/81/node = SubResource( 94 )
+nodes/fragment/81/position = Vector2( 140, 1100 )
+nodes/fragment/82/node = SubResource( 95 )
+nodes/fragment/82/position = Vector2( 700, 1000 )
+nodes/fragment/83/node = SubResource( 96 )
+nodes/fragment/83/position = Vector2( 500, 1000 )
+nodes/fragment/84/node = SubResource( 97 )
+nodes/fragment/84/position = Vector2( 300, 1160 )
+nodes/fragment/85/node = SubResource( 98 )
+nodes/fragment/85/position = Vector2( 300, 1100 )
+nodes/fragment/86/node = SubResource( 99 )
+nodes/fragment/86/position = Vector2( 500, 1100 )
+nodes/fragment/87/node = SubResource( 100 )
+nodes/fragment/87/position = Vector2( 720, 1100 )
+nodes/fragment/88/node = SubResource( 101 )
+nodes/fragment/88/position = Vector2( 880, 1000 )
+nodes/fragment/89/node = SubResource( 102 )
+nodes/fragment/89/position = Vector2( 880, 1220 )
+nodes/fragment/90/node = SubResource( 104 )
+nodes/fragment/90/position = Vector2( 720, 1320 )
+nodes/fragment/91/node = SubResource( 105 )
+nodes/fragment/91/position = Vector2( 500, 1320 )
+nodes/fragment/92/node = SubResource( 106 )
+nodes/fragment/92/position = Vector2( 700, 1220 )
+nodes/fragment/93/node = SubResource( 107 )
+nodes/fragment/93/position = Vector2( 300, 1320 )
+nodes/fragment/94/node = SubResource( 108 )
+nodes/fragment/94/position = Vector2( 300, 1380 )
+nodes/fragment/95/node = SubResource( 109 )
+nodes/fragment/95/position = Vector2( 500, 1220 )
+nodes/fragment/96/node = SubResource( 110 )
+nodes/fragment/96/position = Vector2( 140, 1320 )
+nodes/fragment/97/node = SubResource( 111 )
+nodes/fragment/97/position = Vector2( 120, 1220 )
+nodes/fragment/98/node = SubResource( 112 )
+nodes/fragment/98/position = Vector2( -20, 1320 )
+nodes/fragment/99/node = SubResource( 113 )
+nodes/fragment/99/position = Vector2( -60, 1280 )
+nodes/fragment/100/node = SubResource( 1 )
+nodes/fragment/100/position = Vector2( -60, 1220 )
+nodes/fragment/101/node = SubResource( 2 )
+nodes/fragment/101/position = Vector2( 880, 1440 )
+nodes/fragment/102/node = SubResource( 3 )
+nodes/fragment/102/position = Vector2( 720, 1540 )
+nodes/fragment/103/node = SubResource( 4 )
+nodes/fragment/103/position = Vector2( 500, 1540 )
+nodes/fragment/104/node = SubResource( 5 )
+nodes/fragment/104/position = Vector2( 700, 1440 )
+nodes/fragment/105/node = SubResource( 6 )
+nodes/fragment/105/position = Vector2( 300, 1540 )
+nodes/fragment/106/node = SubResource( 7 )
+nodes/fragment/106/position = Vector2( 300, 1600 )
+nodes/fragment/107/node = SubResource( 8 )
+nodes/fragment/107/position = Vector2( 500, 1440 )
+nodes/fragment/108/node = SubResource( 9 )
+nodes/fragment/108/position = Vector2( 140, 1540 )
+nodes/fragment/109/node = SubResource( 10 )
+nodes/fragment/109/position = Vector2( 120, 1440 )
+nodes/fragment/110/node = SubResource( 12 )
+nodes/fragment/110/position = Vector2( -20, 1540 )
+nodes/fragment/111/node = SubResource( 13 )
+nodes/fragment/111/position = Vector2( -60, 1500 )
+nodes/fragment/112/node = SubResource( 14 )
+nodes/fragment/112/position = Vector2( -60, 1440 )
+nodes/fragment/113/node = SubResource( 15 )
+nodes/fragment/113/position = Vector2( 920, 1100 )
+nodes/fragment/114/node = SubResource( 16 )
+nodes/fragment/114/position = Vector2( 920, 1320 )
+nodes/fragment/115/node = SubResource( 17 )
+nodes/fragment/115/position = Vector2( 1080, 1100 )
+nodes/fragment/116/node = SubResource( 18 )
+nodes/fragment/116/position = Vector2( 920, 1540 )
+nodes/fragment/117/node = SubResource( 19 )
+nodes/fragment/117/position = Vector2( 1080, 1000 )
+nodes/fragment/118/node = SubResource( 20 )
+nodes/fragment/118/position = Vector2( 340, 1000 )
+nodes/fragment/119/node = SubResource( 21 )
+nodes/fragment/119/position = Vector2( 340, 1220 )
+nodes/fragment/120/node = SubResource( 23 )
+nodes/fragment/120/position = Vector2( 340, 1440 )
+nodes/fragment/122/node = SubResource( 24 )
+nodes/fragment/122/position = Vector2( 1060, 920 )
+nodes/fragment/123/node = SubResource( 25 )
+nodes/fragment/123/position = Vector2( 860, 60 )
+nodes/fragment/124/node = SubResource( 26 )
+nodes/fragment/124/position = Vector2( 900, 880 )
+nodes/fragment/125/node = SubResource( 27 )
+nodes/fragment/125/position = Vector2( 680, 60 )
+nodes/fragment/129/node = SubResource( 28 )
+nodes/fragment/129/position = Vector2( 1660, 440 )
+nodes/fragment/130/node = SubResource( 30 )
+nodes/fragment/130/position = Vector2( 1660, 540 )
+nodes/fragment/135/node = SubResource( 31 )
+nodes/fragment/135/position = Vector2( 2580, 440 )
+nodes/fragment/136/node = SubResource( 32 )
+nodes/fragment/136/position = Vector2( 500, 100 )
+nodes/fragment/137/node = SubResource( 33 )
+nodes/fragment/137/position = Vector2( 500, 920 )
+nodes/fragment/138/node = SubResource( 34 )
+nodes/fragment/138/position = Vector2( 720, 880 )
+nodes/fragment/141/node = SubResource( 36 )
+nodes/fragment/141/position = Vector2( 2760, 440 )
+nodes/fragment/142/node = SubResource( 37 )
+nodes/fragment/142/position = Vector2( 1460, 520 )
+nodes/fragment/connections = PoolIntArray( 3, 0, 4, 0, 2, 0, 4, 1, 7, 0, 9, 0, 9, 0, 8, 0, 9, 1, 8, 2, 9, 2, 8, 1, 11, 0, 13, 1, 12, 0, 13, 0, 13, 0, 14, 0, 14, 1, 42, 0, 42, 0, 15, 1, 5, 0, 7, 0, 4, 0, 47, 0, 47, 0, 5, 0, 58, 0, 65, 0, 59, 0, 68, 0, 58, 0, 67, 0, 59, 0, 69, 0, 65, 0, 70, 0, 69, 0, 70, 1, 68, 0, 71, 0, 67, 0, 71, 1, 70, 0, 63, 0, 71, 0, 63, 1, 72, 0, 65, 1, 72, 0, 68, 1, 72, 1, 67, 1, 72, 1, 69, 1, 22, 0, 19, 1, 21, 0, 19, 0, 23, 0, 20, 0, 23, 1, 20, 1, 23, 2, 20, 2, 24, 0, 23, 0, 26, 0, 24, 0, 28, 0, 25, 0, 27, 0, 25, 1, 25, 0, 48, 0, 48, 0, 26, 0, 35, 0, 32, 1, 34, 0, 32, 0, 36, 1, 33, 1, 36, 2, 33, 0, 36, 0, 33, 2, 37, 0, 36, 0, 39, 0, 37, 0, 41, 0, 38, 0, 40, 0, 38, 1, 38, 0, 49, 0, 49, 0, 39, 0, 43, 0, 16, 1, 16, 0, 44, 1, 19, 0, 18, 0, 18, 2, 43, 0, 45, 0, 29, 1, 29, 0, 46, 1, 32, 0, 30, 0, 30, 0, 45, 0, 15, 0, 44, 0, 44, 0, 46, 0, 8, 0, 15, 0, 20, 0, 16, 0, 33, 0, 29, 0, 75, 0, 47, 1, 75, 0, 48, 1, 75, 0, 49, 1, 78, 0, 79, 0, 77, 0, 79, 1, 81, 0, 83, 0, 83, 0, 82, 0, 83, 1, 82, 2, 83, 2, 82, 1, 84, 0, 86, 1, 85, 0, 86, 0, 86, 0, 87, 0, 87, 1, 113, 0, 113, 0, 88, 1, 80, 0, 81, 0, 79, 0, 118, 0, 118, 0, 80, 0, 94, 0, 91, 1, 93, 0, 91, 0, 95, 0, 92, 0, 95, 1, 92, 1, 95, 2, 92, 2, 96, 0, 95, 0, 98, 0, 96, 0, 100, 0, 97, 0, 99, 0, 97, 1, 97, 0, 119, 0, 119, 0, 98, 0, 106, 0, 103, 1, 105, 0, 103, 0, 107, 1, 104, 1, 107, 2, 104, 0, 107, 0, 104, 2, 108, 0, 107, 0, 110, 0, 108, 0, 112, 0, 109, 0, 111, 0, 109, 1, 109, 0, 120, 0, 120, 0, 110, 0, 114, 0, 89, 1, 89, 0, 115, 1, 91, 0, 90, 0, 90, 2, 114, 0, 116, 0, 101, 1, 101, 0, 117, 1, 103, 0, 102, 0, 102, 0, 116, 0, 88, 0, 115, 0, 115, 0, 117, 0, 82, 0, 88, 0, 92, 0, 89, 0, 104, 0, 101, 0, 122, 0, 118, 1, 122, 0, 119, 1, 122, 0, 120, 1, 123, 0, 75, 0, 123, 0, 75, 1, 123, 0, 75, 2, 124, 0, 122, 0, 124, 0, 122, 1, 124, 0, 122, 2, 125, 0, 123, 1, 60, 0, 129, 0, 60, 0, 130, 0, 53, 0, 129, 1, 53, 2, 130, 1, 130, 0, 59, 0, 129, 0, 58, 0, 63, 0, 135, 0, 136, 0, 125, 1, 137, 0, 138, 1, 138, 0, 124, 1, 141, 0, 0, 0, 135, 0, 141, 0, 117, 0, 72, 0, 142, 0, 53, 0, 46, 0, 142, 0 )
