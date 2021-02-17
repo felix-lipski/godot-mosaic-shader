@@ -1,9 +1,9 @@
 # godot-mosaic-shader-001
 Godot VisualShader - auto-tiles and auto-rotetes the texture to avoid texture repetition
 
-important!: disable filtering and mip-mapping in import options of the noise texture!
+**Very important: disable _filtering_ and _mip-mapping_ in import options of the noise texture!**
 
-initial parameters:
+Initial parameters:
 Noise Size: 10
 Texture Size: 1
 
