@@ -5,7 +5,7 @@ Godot VisualShader - auto-tiles and auto-rotetes the texture to avoid texture re
 ![before](https://github.com/felix-lipski/godot-mosaic-shader-001/blob/master/demos/before.png)
 
 ### After shader applied:
-![after](https://github.com/felix-lipski/godot-mosaic-shader-001/blob/master/demos/before.png)
+![after](https://github.com/felix-lipski/godot-mosaic-shader-001/blob/master/demos/after.png)
 
 **Very important: disable _filtering_ and _mip-mapping_ in import options of the noise texture!**
 
