@@ -7,9 +7,12 @@ Godot VisualShader - auto-tiles and auto-rotetes the texture to avoid texture re
 ### After shader applied:
 ![after](https://github.com/felix-lipski/godot-mosaic-shader-001/blob/master/demos/after.png)
 
+### When used with an organic texture, this shader fixes texture repetition, but introduces new seams:
+![used with an organic texture](https://github.com/felix-lipski/godot-mosaic-shader-001/blob/master/demos/organic.png)
+
 **Very important: disable _filtering_ and _mip-mapping_ in import options of the noise texture!**
 
-Initial parameters:
+### Initial parameters:
 Noise Size: 10
 Texture Size: 1
 
