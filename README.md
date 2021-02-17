@@ -1,4 +1,4 @@
-# godot-mosaic-shader-001
+# godot-mosaic-shader
 Godot VisualShader - auto-tiles and auto-rotetes the texture to avoid texture repetition
 
 ### Before shader applied:
